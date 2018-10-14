@@ -10,10 +10,10 @@ class ArticleCreate extends React.Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
-        axios.post('http://127.0.0.1:8000/api/articles/create', values)
-            .then(response => {
-              window.location = "/"
-            })
+        axios.post('http://127.0.0.1:8000/api/articles/create/', values)
+          .then(response => {
+            window.location = "/"
+          })
       }
     });
   }
