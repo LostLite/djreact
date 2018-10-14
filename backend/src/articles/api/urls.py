@@ -3,7 +3,6 @@ from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register(r'', ArticleViewSet, base_name='articles')
-router.register(r'articles', ArticleViewSet, base_name='articles')
 urlpatterns = router.urls
 
 # from django.urls import path
